@@ -1,0 +1,213 @@
+/*-------------------------------------------- Category feature CSS Start --------------------------------------*/
+.tt-category-featured {
+    float: left;
+    position: relative;
+    margin: 0 0 80px;
+    width: 100%;
+  }
+  .tt-category-featured .box-heading {
+      display: none;
+  }
+  .tt-category-featured .ttfcat-items .category-feature {
+      margin: 0;
+  }
+  .tt-category-featured .owl-carousel .owl-stage-outer {
+      direction: ltr;
+  }
+  .tt-category-featured .owl-item.active.center {
+      margin-top: 50px;
+      transition: all 400ms ease-in-out 0s;
+      -webkit-transition: all 400ms ease-in-out 0s;
+      -moz-transition: all 400ms ease-in-out 0s;
+      -o-transition: all 400ms ease-in-out 0s;
+      -ms-transition: all 400ms ease-in-out 0s;
+  }
+  .tt-category-featured .ttfcat-items .item {
+      float: left;
+      padding: 0 15px;
+      width: 100%;
+  }
+  .tt-category-featured .ttfcat-items .content {
+      float: left;
+      width: 100%;
+  }
+  .tt-category-featured .category-feature .image {
+      float: left;
+      width: 100%;
+  }
+  .tt-category-featured .ttfcat-items .item .image a {
+      display: block;
+      overflow: hidden;
+      position: relative;
+  }
+  .tt-category-featured .ttfcat-items .item .image a img {
+      max-width: 100%;
+      transition: all .4s ease-in-out 0s;
+      -webkit-transition: all .4s ease-in-out 0s;
+      -moz-transition: all .4s ease-in-out 0s;
+      -o-transition: all .4s ease-in-out 0s;
+      -ms-transition: all .4s ease-in-out 0s;
+      overflow: hidden;
+  }
+  .tt-category-featured .ttfcat-items .item:hover .image a img {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+  }
+  .tt-category-featured .category-feature .caption {
+      position: absolute;
+      float: left;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+  }
+  .tt-category-featured .category-feature .caption::before {
+      background: #ffffff;
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      border-radius: 50%;
+  }
+  @keyframes hover__tab{
+      0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1)
+      }
+      25% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2)
+      }
+      50% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1)
+      }
+      75% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2)
+      }
+      100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1)
+      }
+    }
+  .tt-category-featured .category-feature .caption .cat-sub {
+      display: none;
+  }
+  .tt-category-featured .products-carousel .owl-buttons {
+      display: none;
+  }
+  .tt-category-featured .container {
+      position: relative;
+  }
+  .tt-category-featured .caption .cat-title {
+      float: none;
+      width: auto;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+  }
+  .tt-category-featured .caption .cat-title > h4 {
+      float: none;
+      display: inline-block;
+      vertical-align: top;
+      width: 64%;
+      margin: 0 0 5px;
+  }
+  .tt-category-featured .caption .cat-title > h4 a {
+      color: #111;
+      font: 500 20px/24px var(--secondary-font);
+  }
+  .tt-category-featured .content .caption .desc {
+    color: #666666;
+    float: left;
+    font: italic 400 13px/15px var(--primary-font);
+    margin: 0;
+    width: 100%;
+  }
+  .tt-category-featured .ttfcat-items {
+    float: left;
+    position: relative;
+    width: 100%;
+  }
+  /*-------------------------------------------- Category feature custome CSS start --------------------------------------*/
+  .tt-category-featured .customNavigation {
+      display: none;
+      position: static;
+  }
+  .tt-category-featured .customNavigation a.prev::before,
+  .tt-category-featured .customNavigation a.next::before,
+  .tt-category-featured .customNavigation a.prev::after,
+  .tt-category-featured .customNavigation a.next::after {
+      display: none;
+  }
+  .tt-category-featured .customNavigation a {
+      bottom: 0;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+  }
+  .tt-category-featured .customNavigation a:hover {
+      background-color: #5bb812;
+  }
+  .tt-category-featured .customNavigation a.prev {
+      left: 0;
+      right: auto;
+  }
+  .tt-category-featured .customNavigation a.next {
+      left: auto;
+      right: 0;
+  }
+  /*-------------------------------------------- Category feature custome CSS End --------------------------------------*/
+  /*-------------------------------------------- Category feature CSS End --------------------------------------*/
+  @media (max-width: 1199px) {
+      .tt-category-featured .category-feature .caption::before {
+          width: 120px;
+          height: 120px;
+      }
+      .tt-category-featured .caption .cat-title > h4 a {
+          font-size: 16px;
+          line-height: 20px;
+      }
+  }
+  @media (max-width: 1300px) {
+      .tt-category-featured {
+          margin: 0 0 50px;
+      }
+  }
+  @media (max-width: 767px) {
+      .tt-category-featured {
+          margin: 0 0 40px;
+      }
+      .tt-category-featured .owl-item.active.center {
+          margin: 0;
+      }
+  }
+  @media (max-width: 480px) {
+      .tt-category-featured {
+          margin: 0 0 30px;
+      }
+  }
